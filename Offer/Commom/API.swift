@@ -15,6 +15,7 @@ class API {
 
 enum APIService {
     case login
+    case register
     case loja(Double, Double, Int)
 }
 
@@ -27,10 +28,24 @@ extension APIService : Path {
         switch self {
         case .login:
             return "/user/login"
+        case .register:
+            return "/user/register"
         case .loja(let latitude,
                    let longitude,
                    let range):
             return "/loja?latitude=\(latitude)&longitude=\(longitude)&range=\(range)"
         }
+    }
+}
+
+struct DefaultResponse: Codable {
+    let message: String?
+}
+
+extension DataRequest {
+    
+    @discardableResult
+    func responseDefault(queue: DispatchQueue? = nil, completionHandler: @escaping (DataResponse<DefaultResponse>) -> Void) -> Self {
+        return responseDecodable(queue: queue, completionHandler: completionHandler)
     }
 }

@@ -8,18 +8,20 @@
 import UIKit
 
 class LoginView: UIViewController {
-    @IBOutlet var usernameTxtField: UITextField!
+    @IBOutlet var emailTxtField: UITextField!
     @IBOutlet var passwordTxtField: UITextField!
+    @IBOutlet var loadingButtonView: LoadingButtonView!
     
     lazy var viewModel: LoginViewModelProtocol = LoginViewModel(view: self)
     
     @IBAction func loginDidTapped() {
-        let username = usernameTxtField.text ?? ""
+        let email = emailTxtField.text ?? ""
         let password = passwordTxtField.text ?? ""
-        if(username.isEmpty || password.isEmpty) {
+        if(email.isEmpty || password.isEmpty) {
             alert(message: "Os campos usuário e senha são de preenchimento obrigatório!")
         } else {
-            viewModel.doLogin(username: username, password: password)
+            loadingButtonView.showLoading()
+            viewModel.doLogin(email: email, password: password)
         }
     }
     
@@ -32,10 +34,17 @@ class LoginView: UIViewController {
 extension LoginView: LoginViewProtocol {
     
     func navigateToMain() {
+        loadingButtonView.hiddenLoading()
         performSegue(withIdentifier: SeguesFrom.login.toMain, sender: nil)
+    }
+    
+    func showError(msg: String) {
+        loadingButtonView.hiddenLoading()
+        alert(message: msg)
     }
 }
 
 protocol LoginViewProtocol: class {
     func navigateToMain()
+    func showError(msg: String)
 }

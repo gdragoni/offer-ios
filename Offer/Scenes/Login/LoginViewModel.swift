@@ -14,11 +14,24 @@ class LoginViewModel: LoginViewModelProtocol {
         self.view = view
     }
     
-    func doLogin(username: String, password: String) {
-        
+    func doLogin(email: String, password: String) {
+        let request = LoginRequest(email: email, password: password)
+        WebService.run(service: .login, parameters: request.dictionary ?? [:]).responseLogin(completionHandler: { [weak self] completion in
+            switch(completion.result) {
+            case .success(let response):
+                if let authBearer = response.token {
+                    Session.current.save(authBearer: authBearer)
+                    self?.view.navigateToMain()
+                } else {
+                    self?.view.showError(msg: "Ocorreu um erro ao tentar fazer login")
+                }
+            case.failure(let error):
+                self?.view.showError(msg: error.localizedDescription)
+            }
+        })
     }
 }
 
 protocol LoginViewModelProtocol {
-    func doLogin(username: String, password: String)
+    func doLogin(email: String, password: String)
 }

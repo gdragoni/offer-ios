@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1694B97C259CEA2E00A731DC /* UITextField+PlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B97B259CEA2E00A731DC /* UITextField+PlaceholderColor.swift */; };
+		1694B97F259CEBFC00A731DC /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B97E259CEBFC00A731DC /* String+Validation.swift */; };
+		1694B982259CEDF000A731DC /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B981259CEDF000A731DC /* SignupViewModel.swift */; };
+		1694B98B259CF3DB00A731DC /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B98A259CF3DB00A731DC /* Webservice.swift */; };
+		1694B98F259CF48200A731DC /* Dictionary+Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B98E259CF48200A731DC /* Dictionary+Print.swift */; };
+		1694B992259CF50900A731DC /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B991259CF50900A731DC /* HTTPStatusCode.swift */; };
+		1694B998259CF73000A731DC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B997259CF73000A731DC /* Login.swift */; };
+		1694B99C259CF7C500A731DC /* Alamofire+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B99B259CF7C500A731DC /* Alamofire+Codable.swift */; };
+		1694B9A2259D00C200A731DC /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B9A1259D00C200A731DC /* LoadingButtonView.swift */; };
+		1694B9AB259D148C00A731DC /* Encodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B9AA259D148C00A731DC /* Encodable+Utils.swift */; };
+		1694B9AE259D14D900A731DC /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B9AD259D14D900A731DC /* Register.swift */; };
 		5D446E12259A1E3A00234414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D446E11259A1E3A00234414 /* AppDelegate.swift */; };
 		5D446E19259A1E3A00234414 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D446E17259A1E3A00234414 /* Auth.storyboard */; };
 		5D446E1B259A1E3C00234414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D446E1A259A1E3C00234414 /* Assets.xcassets */; };
@@ -30,6 +41,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1694B97B259CEA2E00A731DC /* UITextField+PlaceholderColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+PlaceholderColor.swift"; sourceTree = "<group>"; };
+		1694B97E259CEBFC00A731DC /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		1694B981259CEDF000A731DC /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		1694B98A259CF3DB00A731DC /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		1694B98E259CF48200A731DC /* Dictionary+Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Print.swift"; sourceTree = "<group>"; };
+		1694B991259CF50900A731DC /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		1694B997259CF73000A731DC /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		1694B99B259CF7C500A731DC /* Alamofire+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Codable.swift"; sourceTree = "<group>"; };
+		1694B9A1259D00C200A731DC /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
+		1694B9AA259D148C00A731DC /* Encodable+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Utils.swift"; sourceTree = "<group>"; };
+		1694B9AD259D14D900A731DC /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		5D446E0E259A1E3A00234414 /* Offer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Offer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D446E11259A1E3A00234414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D446E18259A1E3A00234414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
@@ -68,6 +90,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1694B989259CF3C800A731DC /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				1694B98A259CF3DB00A731DC /* Webservice.swift */,
+				1694B991259CF50900A731DC /* HTTPStatusCode.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		1694B995259CF71800A731DC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1694B996259CF72100A731DC /* API */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		1694B996259CF72100A731DC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1694B997259CF73000A731DC /* Login.swift */,
+				1694B9AD259D14D900A731DC /* Register.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1694B9A0259D009F00A731DC /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				1694B9A1259D00C200A731DC /* LoadingButtonView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		4941570A39888F6F9B299262 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +156,13 @@
 			children = (
 				5D446E29259A1EA600234414 /* AppDelegate */,
 				5D446E31259A20B300234414 /* Commom */,
+				1694B995259CF71800A731DC /* Entities */,
 				5D446E93259A471F00234414 /* Extensions */,
 				5D446E28259A1E8200234414 /* Resources */,
 				5D446E26259A1E5100234414 /* Scenes */,
 				5DDE77B2259A6D2E00129A84 /* Subclass */,
 				5D446E27259A1E6700234414 /* Views */,
+				1694B989259CF3C800A731DC /* Webservice */,
 			);
 			path = Offer;
 			sourceTree = "<group>";
@@ -122,6 +180,7 @@
 		5D446E27259A1E6700234414 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1694B9A0259D009F00A731DC /* Subviews */,
 				5D446E9A259A482900234414 /* SeguesFrom.swift */,
 				5D446E1C259A1E3C00234414 /* LaunchScreen.storyboard */,
 				5D446EA5259A4A7F00234414 /* Start.storyboard */,
@@ -170,6 +229,11 @@
 		5D446E93259A471F00234414 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1694B99B259CF7C500A731DC /* Alamofire+Codable.swift */,
+				1694B98E259CF48200A731DC /* Dictionary+Print.swift */,
+				1694B9AA259D148C00A731DC /* Encodable+Utils.swift */,
+				1694B97E259CEBFC00A731DC /* String+Validation.swift */,
+				1694B97B259CEA2E00A731DC /* UITextField+PlaceholderColor.swift */,
 				5D446E94259A476200234414 /* UIViewController+Alert.swift */,
 				5D446E97259A480300234414 /* UIViewController+Navigation.swift */,
 			);
@@ -189,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDE77AF259A6C6900129A84 /* SignupView.swift */,
+				1694B981259CEDF000A731DC /* SignupViewModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -326,12 +391,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1694B982259CEDF000A731DC /* SignupViewModel.swift in Sources */,
+				1694B9AB259D148C00A731DC /* Encodable+Utils.swift in Sources */,
 				5DDE77B0259A6C6900129A84 /* SignupView.swift in Sources */,
 				5DDE77B4259A6D5700129A84 /* TransparentNavigationBar.swift in Sources */,
+				1694B9AE259D14D900A731DC /* Register.swift in Sources */,
 				5D446E9F259A48E800234414 /* Session.swift in Sources */,
 				5D446EB2259A509200234414 /* StartViewModel.swift in Sources */,
 				5D446EAE259A4F0F00234414 /* StartView.swift in Sources */,
+				1694B992259CF50900A731DC /* HTTPStatusCode.swift in Sources */,
+				1694B98B259CF3DB00A731DC /* Webservice.swift in Sources */,
 				5DDE77B8259A6DFF00129A84 /* NavigationController.swift in Sources */,
+				1694B9A2259D00C200A731DC /* LoadingButtonView.swift in Sources */,
 				5D446E2E259A1F2B00234414 /* LoginView.swift in Sources */,
 				5D446E38259A211000234414 /* AppDefaults.swift in Sources */,
 				5D446E8B259A42E400234414 /* LoginViewModel.swift in Sources */,
@@ -339,7 +410,12 @@
 				5D446E98259A480300234414 /* UIViewController+Navigation.swift in Sources */,
 				5D446E33259A20C200234414 /* API.swift in Sources */,
 				5D446E9B259A482900234414 /* SeguesFrom.swift in Sources */,
+				1694B97C259CEA2E00A731DC /* UITextField+PlaceholderColor.swift in Sources */,
 				5D446E95259A476200234414 /* UIViewController+Alert.swift in Sources */,
+				1694B97F259CEBFC00A731DC /* String+Validation.swift in Sources */,
+				1694B99C259CF7C500A731DC /* Alamofire+Codable.swift in Sources */,
+				1694B998259CF73000A731DC /* Login.swift in Sources */,
+				1694B98F259CF48200A731DC /* Dictionary+Print.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8516E9B21F581F489B2E0A1 /* Pods-Offer.debug.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "https://price-catalog-tcc.herokuapp.com/";
+				API_BASE_URL = "https://price-catalog-tcc.herokuapp.com";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,7 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B005C1C5E4D04297BAEA57B1 /* Pods-Offer.release.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "https://price-catalog-tcc.herokuapp.com/";
+				API_BASE_URL = "https://price-catalog-tcc.herokuapp.com";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
