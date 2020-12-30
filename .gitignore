@@ -1,0 +1,8 @@
+/Pods
+/Offer.xcodeproj/xcuserdata
+/Offer.xcworkspace/xcuserdata
+*.DS_Store
+
+.idea/
+
+

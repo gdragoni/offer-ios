@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wV-2F-yD5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KVI-cR-tPF">
+            <objects>
+                <viewController id="8wV-2F-yD5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aI7-Jx-QX8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="RqL-yC-JXi">
+                                <rect key="frame" x="62" y="340.5" width="290" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RqL-yC-JXi" secondAttribute="height" multiplier="792:616" id="OWw-fC-hun"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="t0m-Eu-kHf"/>
+                        <color key="backgroundColor" red="0.1843137255" green="0.027450980390000001" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RqL-yC-JXi" firstAttribute="width" secondItem="aI7-Jx-QX8" secondAttribute="width" multiplier="0.7" id="4iI-CD-2AC"/>
+                            <constraint firstItem="RqL-yC-JXi" firstAttribute="centerX" secondItem="t0m-Eu-kHf" secondAttribute="centerX" id="DMf-96-E8X"/>
+                            <constraint firstItem="RqL-yC-JXi" firstAttribute="centerY" secondItem="t0m-Eu-kHf" secondAttribute="centerY" id="Yzw-TQ-fDZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJU-um-u5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="-29"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="offer-logo" width="792" height="616"/>
+    </resources>
+</document>

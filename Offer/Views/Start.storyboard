@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ubc-KQ-lxw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View-->
+        <scene sceneID="ebv-NP-rxS">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ubc-KQ-lxw" customClass="StartView" customModule="Offer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="60B-1b-GnH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-nl-ycR">
+                                <rect key="frame" x="62" y="340.5" width="290" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Uc-nl-ycR" secondAttribute="height" multiplier="792:616" id="ZIB-NU-xTr"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="owL-3k-ucv">
+                                <rect key="frame" x="188.5" y="528.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Gr-V3-fNa"/>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.027450980392156862" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="owL-3k-ucv" firstAttribute="centerX" secondItem="4Uc-nl-ycR" secondAttribute="centerX" id="Jio-eF-LXv"/>
+                            <constraint firstItem="owL-3k-ucv" firstAttribute="bottom" secondItem="4Uc-nl-ycR" secondAttribute="bottom" id="gQO-Xe-IBE"/>
+                            <constraint firstItem="4Uc-nl-ycR" firstAttribute="width" secondItem="60B-1b-GnH" secondAttribute="width" multiplier="0.7" id="o92-Rr-LrC"/>
+                            <constraint firstItem="4Uc-nl-ycR" firstAttribute="centerX" secondItem="8Gr-V3-fNa" secondAttribute="centerX" id="vSr-W0-1eh"/>
+                            <constraint firstItem="4Uc-nl-ycR" firstAttribute="centerY" secondItem="8Gr-V3-fNa" secondAttribute="centerY" id="wNV-1S-8Ah"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="i8S-lH-z1f" kind="presentation" identifier="toMain" id="elM-Kj-Brw"/>
+                        <segue destination="4xf-wF-M2I" kind="presentation" identifier="toLogin" id="bfp-dU-TOO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdi-IA-caZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="-29"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="aeU-M0-2A7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="i8S-lH-z1f" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eB1-s5-f0s"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBD-h3-h09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-122"/>
+        </scene>
+        <!--Auth-->
+        <scene sceneID="B2u-pF-nTD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Auth" id="4xf-wF-M2I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NY3-I4-EZI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tC-S4-MMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="offer-logo" width="792" height="616"/>
+    </resources>
+</document>
