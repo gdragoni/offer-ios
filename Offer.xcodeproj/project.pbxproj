@@ -18,6 +18,9 @@
 		1694B9A2259D00C200A731DC /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B9A1259D00C200A731DC /* LoadingButtonView.swift */; };
 		1694B9AB259D148C00A731DC /* Encodable+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B9AA259D148C00A731DC /* Encodable+Utils.swift */; };
 		1694B9AE259D14D900A731DC /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1694B9AD259D14D900A731DC /* Register.swift */; };
+		169863A925A7385A00BE77CD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169863A825A7385A00BE77CD /* MapView.swift */; };
+		169863AD25A768E500BE77CD /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169863AC25A768E500BE77CD /* HomeTabBarView.swift */; };
+		169863B625A786F200BE77CD /* LogoTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169863B525A786F200BE77CD /* LogoTitleViewController.swift */; };
 		5D446E12259A1E3A00234414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D446E11259A1E3A00234414 /* AppDelegate.swift */; };
 		5D446E19259A1E3A00234414 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D446E17259A1E3A00234414 /* Auth.storyboard */; };
 		5D446E1B259A1E3C00234414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D446E1A259A1E3C00234414 /* Assets.xcassets */; };
@@ -52,6 +55,9 @@
 		1694B9A1259D00C200A731DC /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
 		1694B9AA259D148C00A731DC /* Encodable+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Utils.swift"; sourceTree = "<group>"; };
 		1694B9AD259D14D900A731DC /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		169863A825A7385A00BE77CD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		169863AC25A768E500BE77CD /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
+		169863B525A786F200BE77CD /* LogoTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTitleViewController.swift; sourceTree = "<group>"; };
 		5D446E0E259A1E3A00234414 /* Offer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Offer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D446E11259A1E3A00234414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D446E18259A1E3A00234414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
@@ -124,6 +130,22 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		169863A725A7383600BE77CD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				169863A825A7385A00BE77CD /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		169863AB25A768CE00BE77CD /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				169863AC25A768E500BE77CD /* HomeTabBarView.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
 		4941570A39888F6F9B299262 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,9 +192,11 @@
 		5D446E26259A1E5100234414 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				169863AB25A768CE00BE77CD /* HomeTabBar */,
 				5D446EAC259A4EFF00234414 /* Start */,
 				5D446E2C259A1F1300234414 /* Login */,
 				5DDE77AE259A6C4C00129A84 /* Signup */,
+				169863A725A7383600BE77CD /* Map */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -263,6 +287,7 @@
 			children = (
 				5DDE77B3259A6D5700129A84 /* TransparentNavigationBar.swift */,
 				5DDE77B7259A6DFF00129A84 /* NavigationController.swift */,
+				169863B525A786F200BE77CD /* LogoTitleViewController.swift */,
 			);
 			path = Subclass;
 			sourceTree = "<group>";
@@ -392,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1694B982259CEDF000A731DC /* SignupViewModel.swift in Sources */,
+				169863AD25A768E500BE77CD /* HomeTabBarView.swift in Sources */,
 				1694B9AB259D148C00A731DC /* Encodable+Utils.swift in Sources */,
 				5DDE77B0259A6C6900129A84 /* SignupView.swift in Sources */,
 				5DDE77B4259A6D5700129A84 /* TransparentNavigationBar.swift in Sources */,
@@ -404,10 +430,12 @@
 				5DDE77B8259A6DFF00129A84 /* NavigationController.swift in Sources */,
 				1694B9A2259D00C200A731DC /* LoadingButtonView.swift in Sources */,
 				5D446E2E259A1F2B00234414 /* LoginView.swift in Sources */,
+				169863B625A786F200BE77CD /* LogoTitleViewController.swift in Sources */,
 				5D446E38259A211000234414 /* AppDefaults.swift in Sources */,
 				5D446E8B259A42E400234414 /* LoginViewModel.swift in Sources */,
 				5D446E12259A1E3A00234414 /* AppDelegate.swift in Sources */,
 				5D446E98259A480300234414 /* UIViewController+Navigation.swift in Sources */,
+				169863A925A7385A00BE77CD /* MapView.swift in Sources */,
 				5D446E33259A20C200234414 /* API.swift in Sources */,
 				5D446E9B259A482900234414 /* SeguesFrom.swift in Sources */,
 				1694B97C259CEA2E00A731DC /* UITextField+PlaceholderColor.swift in Sources */,
